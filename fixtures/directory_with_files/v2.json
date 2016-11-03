@@ -1,0 +1,46 @@
+{
+  "routes": [
+    {
+      "url_parameters": {
+        "id": "Esta es el id del usuario que queremos modificar"
+      },
+      "body": {
+        "mandatory_parameters": {
+          "username": {
+            "validations": "Debe tener un numero por que si",
+            "type": "String"
+          },
+          "password": {
+            "validations": "Tiene que ser 1234",
+            "type": "String"
+          },
+          "email": {
+            "validations": "Debe ser de google",
+            "type": "String"
+          }
+        },
+        "optional_parameters": {
+          "aficiones": {
+            "validations": "Debe contener 300 caracteres como minimo",
+            "type": "String"
+          }
+        }
+      },
+      "example_data": {
+        "username": "supertomate@gmail.com",
+        "password": "supertomate@gmail.com",
+        "aficiones": "supertomate@gmail.com",
+        "email": "supertomate@gmail.com"
+      },
+      "headers": {
+        "content_type": "application/json",
+        "accept": "application/json"
+      },
+      "method": "put",
+      "description": "Modificar un usuario"
+    }
+  ],
+  "path": "/users",
+  "description": "Esta es la seccion dedicada a las rutas de usuario. El usuario es cada una de las personas o entes que tienen acceso a una o varias empresas.",
+  "title": "Usuario v2"
+}
