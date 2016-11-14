@@ -3,10 +3,10 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "middleman-versions"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Pedro Rivas"]
-  s.email       = ["rmdrobs@gmail.com"]
+  s.authors     = ["Pedro Rivas", "Cuéntica","Guillermo Latorre", "David Olmos"]
+  s.email       = ["rmdrobs@gmail.com", "contacto@cuentica.com", "superwillyfoc@gmail.com", "olmos.david@gmail.com"]
   s.homepage    = "https://github.com/cuentica/middleman-versions.git"
   s.summary     = %q{Compile different middleman versions with custom data injected in each one}
   s.description = %q{Compile different middleman versions with custom data injected in each one}
