@@ -3,7 +3,7 @@ module Middleman
     module FileHandler
       def self.load_file(path)
         case File.extname(path)
-          when ".yml"
+          when ".yml",".yaml"
             load_yaml_file path
           when ".json"
             load_json_file path

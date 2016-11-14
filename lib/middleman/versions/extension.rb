@@ -13,7 +13,7 @@ module Middleman
     def after_configuration
       app.config[:versions_options] = options
       versions_list = options.versions.map{|x| x[:decorated_name]}
-      versions_paths = options.versions.map{|x| x[:decorated_name] + "/" +options.destination_template}
+      versions_paths = options.versions.map{|x| x[:decorated_name] + "/" + options.destination_template}
 
       options.versions.each do |version|
         full_version_path = options.versions_path + version[:path]
