@@ -3,19 +3,24 @@ Compile different middleman site versions with custom data injected in each one
 
 ## How to use it
 * Add gem to your Gemfile
+
   ```ruby
   gem 'middleman-versions'
   ```
-* Execute
- ```ruby
- bundle install
- ```
+* Install gems
+
+   ```ruby
+   bundle install
+   ```
+
 * Edit config.rb and add:
+
   ```ruby
   activate :versions do |foo|
     #extension configuration params
   end
   ```
+
 ## Extension params:
 | Param name           | Description                                                | Type                                                                                      | Default value | Mandatory |
 |----------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------|---------------|-----------|
@@ -32,6 +37,25 @@ Compile different middleman site versions with custom data injected in each one
 | version_data    | Data readed from version file       | Hash          | {"license"=>{"name"=>"Apache 2.0", "url"=>"http://www.apache.org/licenses/LICENSE-2.0.html"}} |
 | current_version | Current version of page itself      | String        | v1                                                                                           |
 | current_path    | Current final path of page itself   | String        | v1/index.html                                                                                |
+                                                         |
+## Compile to static site
+When you execute ````middleman build``` you will get a structure like this
+
+```
+build
+└─── v1
+│    │     index.html
+│
+└─── v2
+|    │    index.html
+│
+└─── resources
+          └─── fonts
+          └─── images
+          └─── javascripts
+          └─── stylesheets
+```
+
 
 ## TODO:
 - [ ] Example Middleman project using this gem
