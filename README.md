@@ -1,6 +1,13 @@
 #middleman-versions
 Compile different middleman site versions with custom data injected in each one
 
+##Dependencies
+
+* Middleman <= 4.0.0
+  
+  This Extension use app.proxy to inject values in templates, in Middleman v4 options hash was removed from proxy,        https://github.com/middleman/middleman/blob/7c968b9572923fd0f7fb176ca8e52a91727adf84/CHANGELOG.md
+
+
 ## How to use it
 * Add gem to your Gemfile
 
